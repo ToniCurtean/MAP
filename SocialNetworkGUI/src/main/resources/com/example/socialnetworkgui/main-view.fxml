@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="426.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetworkgui.controller.MainController">
+   <children>
+      <Label fx:id="userName" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="200.0" />
+      <Button fx:id="acceptRequestButton" layoutX="511.0" layoutY="82.0" mnemonicParsing="false" onAction="#onAcceptButtonClick" text=" Accept Request" />
+      <Button fx:id="deleteButton" layoutX="58.0" layoutY="306.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" text="Delete Friend" />
+      <Button fx:id="sendRequestButton" layoutX="497.0" layoutY="359.0" mnemonicParsing="false" onAction="#onSendRequestButtonClick" text="Send Request" />
+      <Button fx:id="logoutButton" layoutX="625.0" layoutY="17.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" text="Log out" />
+      <TextField fx:id="newFriend" layoutX="436.0" layoutY="319.0" />
+      <ListView fx:id="friendsView" layoutX="58.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="requestsView" layoutX="300.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="declineRequestButton" layoutX="511.0" layoutY="117.0" mnemonicParsing="false" onAction="#onDeclineButtonClick" text="Decline Request" />
+      <Button fx:id="withdrawRequestButton" layoutX="511.0" layoutY="156.0" mnemonicParsing="false" onAction="#onWithdrawButtonClick" text="Withdraw Request" />
+      <Label layoutX="58.0" layoutY="54.0" text="Friends" />
+      <Label layoutX="306.0" layoutY="54.0" text="Requests" />
+      <Label layoutX="436.0" layoutY="297.0" text="Search for user" />
+      <ChoiceBox fx:id="friendsBox" layoutX="58.0" layoutY="359.0" onMouseReleased="#onSelectChoiceBox" prefWidth="150.0" />
+   </children>
+</AnchorPane>
